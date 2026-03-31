@@ -8,7 +8,7 @@ Before starting deep learning, we must first understand what intelligence and ar
 Intelligence is the ability to process information to make and inform future decisions. It is an innate ability of many living things at various levels. For Example:
 1. A bee decides which flower to take nectar from based on the olfactory information it receives
 2. A sunflower decides which direction to move based on the directional information of the sun
-3.    A person, like yourself, decides to take a course or not based on the information you receive
+3. A person, like yourself, decides to take a course or not based on the information you receive
 
 Artificial Intelligence, in the same line of thought, is the practice of building artificial algorithms to process information in order to make and inform of future decisions. 
 
@@ -44,11 +44,10 @@ Thinking in absolute basic, low-level steps. If a human is presented with a imag
 
 So, as you can see, there is a hierarchical order to observe the features.
 
+Similar to the human interpretation, neural networks also do the three steps given:
+1. It looks at the low-level features in the image like lines, edges, etc.
+2. It then composes these into things like corners, curves and shapes. They form the features of the model
+3. These corners and curves are then looked into to see if we have a face or not.
 
+Note: The shapes or corners are not necessarily things like nose, ears, etc. that we see. They can be anything...it is what the neural network 'sees' or 'observes' after going through millions of images. 
 
-
-
-
-
-
-Similar to the human interpretation, neural networks also 
