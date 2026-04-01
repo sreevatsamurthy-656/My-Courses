@@ -225,3 +225,54 @@ Because all the inputs are densely connected to all outputs, these layers are ca
 Now you can add further layers. Here is an image of a deep neural network with the connections very much abstracted for simplicity
 
 ![Activation Functions](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/deep-neural-networks.png)
+
+## Loss, Loss Functions and Gradient Descent
+
+So let us take an example scenario where we are using a neural network model to predict something. For example, predicting the price of a house depending on various parameters like house area, location, weather, number of bedrooms, years since construction, etc.
+
+So, given that we have a previous record of the house price and the parameters like:
+
+| House Area (sq ft) | Location      | Weather | Bedrooms | Years Since Construction | Price ($) |
+|--------------------|---------------|----------|-----------|--------------------------|---------------------|
+| 1200               | Urban         | Sunny    | 2         | 5                        | 250,000             |
+| 1800               | Suburban      | Rainy    | 3         | 10                       | 320,000             |
+| 2500               | Urban         | Cloudy   | 4         | 2                        | 500,000             |
+| 900                | Rural         | Sunny    | 2         | 20                       | 150,000             |
+| 3000               | Urban         | Rainy    | 5         | 1                        | 650,000             |
+
+So we know that for a 5 year-old house of area 1200 sq.ft, in an urban area, with a sunny weather and 2 bedrooms, its price it was purchased for was $250,000. 
+
+This value - the Price of $250,000 which is an actual, real-world value, is called the **true value** .
+
+Now, suppose we have 3 neural networks we have designed to predict house prices. Now the weights and stuff, we have put it based on some calculations, let's assume. 
+
+1. The first network, when it is fed the values 1200 sq ft, Urban area, Sunny weather, 2 bedrooms and 5 year old house -> It tells that the price of the house can be $247,549
+
+2. The second network, when it is fed the same parameters on House Area, Location, Weather, Bedrooms and Years since Construction -> It tells us that the price of the house can be $559,345
+
+3. The third network, when it is fed the same parameters on House Area, Location, Weather, Bedrooms and Years since Construction -> It tells us that the price of the house can be $124,569
+
+The prices told by the the three networks are called **predicted values** . As the name suggests, it is the value predicted by the neural network.
+
+Now, whether you look at it from the buyer or seller point of view, both parties will agree to have the house to be priced according to how previous houses of the same kind were purchased.
+
+That is true for most scenarios. To put it in the Machine Learning Terminology, the closer the predicted values are to the true values, the better the model is. 
+
+So how do we make such a model?
+
+We can't obviously tune the parameters ourselves. That defeats the whole purpose of Machine Learning. The way we do this is by something called **Gradient Descent**
+
+In simple terms, Gradient Descent means that a model looks at how different the predicted values are from the true values, and then it modifies its weights in a way such that the difference gets reduced.
+
+So how is the difference between the predicted and true values observed?
+
+It is done by measuring the **loss** of the network
+
+The loss of a network measures the cost incurred from incorrect predictions.
+
+The loss of a network is measured by a **loss function**. A general depiction is given by:
+
+$$
+\mathscr{L}\left(f\left(x^{(i)}; W\right), y^{(i)}\right)
+$$
+
