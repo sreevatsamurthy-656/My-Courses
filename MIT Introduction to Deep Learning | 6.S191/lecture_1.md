@@ -51,3 +51,52 @@ Similar to the human interpretation, neural networks also do the three steps giv
 
 Note: The shapes or corners are not necessarily things like nose, ears, etc. that we see. They can be anything...it is what the neural network 'sees' or 'observes' after going through millions of images. 
 
+### Why are we learning Neural Networks and Deep Learning Now?
+
+If you notice the timeline, we see that a lot of the concepts and algorithms in deep learning have existed since the 1950s or 70s. For example:
+
+* Gradient Descent was developed in 1952
+* The Perceptron was developed in 1958
+* Backpropogation was developed in 1986
+* Deep Convolutional Neural Networks were developed in 1995
+
+1. Big Data
+   - Deep Learning algorithms develop and thrive on huge amounts of data
+   - In the current world, there is a massive amount of data available to use, comprehend, and store for various purposes
+
+2. Hardware
+   - There are inexpensive devices available in the market that can store huge amounts of data like 1 TB
+   - Companies like AMD and Nvidia are providing new Graphical Processing Units (GPUs) that accelerate parallel computing, which subsequently parallelizes the deployment and development of Deep Neural Networks
+
+3. Software
+   - In the past couple of years, different kinds of software like TensorFlow, PyTorch, and JAX were developed which support building deep neural networks
+   - These software tools allow us to democratize the ability to create, train, and deploy these models on a very large scale
+## Perceptron
+
+It is THE MOST basic building block of a neural network. It is very important to understand while doing deep learning
+
+
+At the basic level, the goal of the neuron is to take m inputs and create some output.
+
+The steps involved in the working of a perceptron are:
+1. Take each of the inputs $$x_1, x_2, x_3...x_m$$ and multiply each of them by some corresponding weight $$w_1, w_2, w_3...w_m$$ 
+2. Then take these products and add them up (i.e. Make a linear equation)
+3. Then this sum is passed through an activation function to yield an output
+
+An Activation Function is, simply put, a transformation. It is a non-linear transformation which converts the linear equation into a non-linear output
+
+Simply put, the perceptron does this
+a. Make a linear equation of the inputs
+b. Pass it through a non-linear transformation to yield an output.
+
+### Why we use an activation function?
+
+The output of the first stage of a perceptron is a linear output. There is a linear relationship between input and output. But in reality, there is very rarely a linear relationship between the input and output. So, a non-lineariy has to be introduced. That is where the activation function comes in.
+
+Mathematically, it is written as:
+
+$$
+\hat{y} = g\Bigg( \sum_{i=1}^{m} x_i w_i \Bigg)
+$$
+
+In addition to this, there is also a bias term $$w_0$$  in the linear eqaution. It shifts the linear combination to a certain direction in the m-dimensional feature space, keeping the decision boundary away from the origin
