@@ -218,6 +218,8 @@ Now we add a **layer** to this perceptron (multi and/or Simple Perceptron, eithe
 
 ![Activation Functions](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/multi-output-perceptron-layer.png)
 
+## Applying Neural Networks
+
 Because all the inputs are densely connected to all outputs, these layers are called **Dense** layers
 
 Now you can add further layers. Here is an image of a deep neural network with the connections very much abstracted for simplicity
