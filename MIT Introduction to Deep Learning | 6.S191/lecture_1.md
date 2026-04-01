@@ -213,3 +213,13 @@ Here the variable 'z' refers to the linear combination of the inputs and the bia
 Now there can be more than one output and each output has its own set of weights for the output it gives. This is called a multi-output perceptron
 
 ![Activation Functions](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/multi-output-perceptron.png)
+
+Now we add a **layer** to this perceptron (multi and/or Simple Perceptron, either works)
+
+![Activation Functions](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/multi-output-perceptron-layer.png)
+
+Because all the inputs are densely connected to all outputs, these layers are called **Dense** layers
+
+Now you can add further layers. Here is an image of a deep neural network with the connections very much abstracted for simplicity
+
+![Activation Functions](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/deep-neural-networks.png)
