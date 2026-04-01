@@ -202,3 +202,14 @@ Softmax converts the input values into probabilities that sum to 1.
 ![Activation Functions](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/activation-functions.png)
 
 ## Building Neural Networks using Perceptrons
+
+A simplified depiction of the perceptron is as follows
+
+
+![Simplified Perceptron](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/perceptron-simplified.png)
+
+Here the variable 'z' refers to the linear combination of the inputs and the bias terms
+
+Now there can be more than one output and each output has its own set of weights for the output it gives. This is called a multi-output perceptron
+
+![Activation Functions](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/multi-output-perceptron.png)
