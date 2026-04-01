@@ -199,4 +199,6 @@ $$
 
 Softmax converts the input values into probabilities that sum to 1.
 
+![Activation Functions](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/activation-functions.png)
+
 ## Building Neural Networks using Perceptrons
