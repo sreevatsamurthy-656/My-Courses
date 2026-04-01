@@ -100,3 +100,103 @@ $$
 $$
 
 In addition to this, there is also a bias term $$w_0$$  in the linear eqaution. It shifts the linear combination to a certain direction in the m-dimensional feature space, keeping the decision boundary away from the origin
+
+Now, expressing this in Matrix Form, we get:
+
+$$
+\hat{y} = g\left(w_0 + X^T W\right)
+$$
+
+where \(X\) is the input feature vector,
+
+$$
+X = 
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_m
+\end{bmatrix}
+$$
+
+and \(W\) is the weight vector,
+
+$$
+W =
+\begin{bmatrix}
+w_1 \\
+w_2 \\
+\vdots \\
+w_m
+\end{bmatrix}
+$$
+
+Thus,
+
+$$
+X^T W = x_1 w_1 + x_2 w_2 + \dots + x_m w_m
+$$
+
+and $$\(g(\cdot)\)$$ is the perceptron activation function.
+
+![Perceptron Diagram](MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/perceptron.png)
+
+Some commonly used activation functions are:
+
+### Sigmoid Function
+
+$$
+g(z) = \frac{1}{1 + e^{-z}}
+$$
+
+The sigmoid function maps the input to a value between 0 and 1.
+
+### Tanh Function
+
+$$
+g(z) = \tanh(z)
+$$
+
+or equivalently,
+
+$$
+g(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}
+$$
+
+The tanh function maps the input to a value between -1 and 1.
+
+### ReLU Function
+
+$$
+g(z) =
+\begin{cases}
+z, & z > 0 \\
+0, & z \leq 0
+\end{cases}
+$$
+
+ReLU outputs the input directly if it is positive; otherwise, it outputs 0.
+
+### Leaky ReLU Function
+
+$$
+g(z) =
+\begin{cases}
+z, & z > 0 \\
+\alpha z, & z \leq 0
+\end{cases}
+$$
+
+where $$\(\alpha\)$$ is a small constant such as 0.01.
+
+### Softmax Function
+
+For a vector input \(z\),
+
+$$
+g(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{n} e^{z_j}}
+$$
+
+Softmax converts the input values into probabilities that sum to 1.
+
+## Building Neural Networks using Perceptrons
