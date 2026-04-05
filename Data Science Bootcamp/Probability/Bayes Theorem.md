@@ -11,4 +11,4 @@
 * Let S be divided into k disjoint events $$ A_1, A_2, A_3...A_k $$ with respective probabilities $$ P(A_1), P(A_2), P(A_3), P(A_3)...P(A_k) $$
 * Let B be an event common to all k disjoint events 
 
-![Bayes Theorem](Data Science Bootcamp/Probability/images/bayes_theorem.png)
+![Bayes Theorem](https://raw.githubusercontent.com/sreevatsamurthy-656/My-Courses/main/Data%20Science%Bootcamp/Probability/images/bayes_theorem.png)
