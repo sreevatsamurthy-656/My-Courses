@@ -31,3 +31,21 @@ P(B \mid A_i) & \text{Likelihood} \\
 \sum_{j=1}^{k} P(B \mid A_j) P(A_j) & \text{Evidence}
 \end{array}
 $$
+
+
+# Conditional Probability
+
+* It is the probability that one event happens given that another event is already known to have happened
+
+* Denoted by P(A|B)
+
+$$
+P(A \mid B) = \frac{P(A \cap B)}{P(B)}
+$$
+
+## Conditional Probability and Independent Events
+
+Independent Events are those pair of events which:
+
+* neither event is affected by the occurance of the other
+* occurnace of one event does not change the probability of the occurance of the others event 
