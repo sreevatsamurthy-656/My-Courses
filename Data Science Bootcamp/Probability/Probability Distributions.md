@@ -11,6 +11,17 @@
 ## Uniform Distribution
 
 * It is a simple, continuous and rectangular distribution
+
+* The Probability Density Function is:
+
+$$
+f(x) =
+\begin{cases}
+\frac{1}{b-a}, & a \leq x \leq b \\
+0, & \text{otherwise}
+\end{cases}
+$$
+
 * Consider a set of numbers a and b where a < b, then:
   - Mean = $$\frac{\text{a+b}}{2}$$
   - Median = $$\frac{\text{a+b}}{2}$$
@@ -26,6 +37,11 @@ dunif(c(1,2,3,4,5,6,7,8,9,10), min = 1, max = 10)
 punif(c(1,2,3,4,5,6,7,8,9,10), min = 1, max = 10)
 ```
 
+### Applications of Uniform Distribution
+
+* Generating Random Numbers
+* Simulating a System (e.g. A Queueing System)
+
 ## Normal Distribution (Gaussian Distribution)
 
 * It is characterized by the iconic **bell-shaped curve**
@@ -33,6 +49,38 @@ punif(c(1,2,3,4,5,6,7,8,9,10), min = 1, max = 10)
   - Most of the values are near the mean
   - The standard deviation is constant on both sides
 * The Normal Distribution is an asymptotic curve, meaning it will always go near the X-axis, but will never truly touch the X-axis
+
+### Definition of Normal Distribution
+
+A normal distribution has:
+1. A mean $$\mu$$
+2. A variance $$\sigma^2$$
+
+Probability Distribution Function:
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+$$
+
+* A Normal Distribution is symmetrical on either side of the mean
+* The point of inflextion is at:  $$\mu \pm 1\sigma$$
+* The measure of skewness is  $$\frac{\text{Mean - Mode}}{\text{SD}}$$ = 0
+
+### Area under the Curve
+
+* 68.0% of values in 1 $$\sigma$$ on either side of the mean.
+* 95.0% of values in 2 $$\sigma$$ on either side of the mean.
+* 99.9% of values in 3 $$\sigma$$ on either side of the mean.
+
+### Converting Normal Distribution into Standard Normal Distribution
+
+The normal distribution can be converted into standard normal distribution by the formula:
+
+$$
+z = \frac{X - \mu}{\sigma}
+$$
+
+A standard normal distribution has mean = 0 and variance = 1
 
 ### Normal Distribution in R
 
@@ -67,11 +115,31 @@ A cow will yield 5.69kg and this can be claimed with 85% probability.
 
 ## Binomial Distribution
 
+### Probability Distribution Function of Binomial Distribution
+
 * Here an experiment is repeated for n trials with replacement
 * Each trial of the experiment has two possible outcomes: a success and a failure
 
 $$
 P(X = x) = \frac{n!}{x!(n-x)!} \, p^x (1-p)^{n-x}
+$$
+### Converting a Binomial Distribution into a Standard Normal Distribution
+
+Given a Binomial Distribution B(X;n,p)
+
+* The Expected Value  = $$np$$
+* The Variance = $$npq$$
+
+By
+
+$$
+Z = \frac{X - E(X)}{\sqrt{V(X)}}
+$$
+
+which is
+
+$$
+Z = \frac{X - np}{\sqrt{npq}} = N(0,1)
 $$
 
 ### Example in R
