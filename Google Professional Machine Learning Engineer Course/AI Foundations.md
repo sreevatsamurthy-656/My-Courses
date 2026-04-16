@@ -84,15 +84,15 @@
 ### There are two kinds of AI Problems:
 
 * Predictive AI:
- - Uses existing data to classify information
- - Predicts future outcomes based on historical patterns
- - Excels at learning what's already there to make informed decisions
- - E.g. Prediction of sales forecasting and route optimization
+ >- Uses existing data to classify information
+ >- Predicts future outcomes based on historical patterns
+ >- Excels at learning what's already there to make informed decisions
+ >- E.g. Prediction of sales forecasting and route optimization
 * Generative AI
- - Creates Summaries
- - Uncovers Complex Correlations
- - Generates new content such as text, images or videos 
- - E.g. Creation of customer responses and automation of marketing campaigns
+ >- Creates Summaries
+ >- Uncovers Complex Correlations
+ >- Generates new content such as text, images or videos 
+ >- E.g. Creation of customer responses and automation of marketing campaigns
 
 ### When to use Predictive and Generative AI?
 
@@ -105,21 +105,21 @@
 #### Layer 1 - AI Infrastructure
 
 * Foundation layer with
- - Advanced Compute
- - Networking
- - Storage
+ >- Advanced Compute
+ >- Networking
+ >- Storage
 * Supports all AI workloads
 
 #### Layer 2 - AI Development
- - Vertex AI provides all the tools needed for AI development like Design, Training and Deployment
- - It is powered by foundational models like Gemini and integrated deployment pipelines
- - Integrates seamlessly with BigQuery
- - Ideal for developers, data scientists and engineers
+ >- Vertex AI provides all the tools needed for AI development like Design, Training and Deployment
+ >- It is powered by foundational models like Gemini and integrated deployment pipelines
+ >- Integrates seamlessly with BigQuery
+ >- Ideal for developers, data scientists and engineers
 
 #### Applications and Solutions
 * Ready-to-use tools for:
- - Business users
- - Analysts
+ >- Business users
+ >- Analysts
 * Enables rapid prototyping without deep technical skills
 
 ### Course Structure
@@ -143,9 +143,9 @@
 #### Module 4
 
 * Build an ML model end-to-end
- - Data Preparation
- - Model Training
- - Deployment
+ >- Data Preparation
+ >- Model Training
+ >- Deployment
 
 
 
