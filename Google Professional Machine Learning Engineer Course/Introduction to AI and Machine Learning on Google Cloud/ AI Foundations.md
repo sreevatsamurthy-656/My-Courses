@@ -332,8 +332,6 @@ First, lets clarify two topics - Artificial Intelligence and Machine Learning
 MLOps (Machine Learning Operations) turns an ML Experiment into production and helps to
 1. Deploy
 2. Monitor
-3. Manage
-
-the ML Models
+3. Manage the ML Models
 
  
