@@ -81,4 +81,8 @@ It is essentially giving the neural network system the aspect of **memory**
 
 ![Individual Timestamps](https://github.com/sreevatsamurthy-656/My-Courses/blob/main/MIT%20Introduction%20to%20Deep%20Learning%20%7C%206.S191/pictures/Handling_individual_time_steps_2.png?raw=true)
 
+##Predict the Next Word - A Sequence Modelling Problem
+
+So this is a problem that is to be addressed while designing both LLMs and SLMs
+
 
